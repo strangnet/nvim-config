@@ -42,7 +42,7 @@ local plugins = {
       },
     },
   },
-  'nvim-tree/nvim-tree.lua',
+--  'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   {
@@ -97,6 +97,8 @@ local plugins = {
   'mbbill/undotree',
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
+
+  { "catppuccin/nvim", name = "catppuccin" },
 }
 
 local opts = {}
