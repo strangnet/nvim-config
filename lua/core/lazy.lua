@@ -42,7 +42,13 @@ local plugins = {
       },
     },
   },
---  'nvim-tree/nvim-tree.lua',
+  -- {
+  --   'nvim-tree/nvim-tree.lua',
+  --   version = "*",
+  --   dependencies = {
+  --     "nvim-tree/nvim-web-devicons",
+  --   },
+  -- },
   'nvim-tree/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   {
@@ -74,9 +80,6 @@ local plugins = {
     }
   },
 
-  -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
-
   -- Fuzzy Finder (files, lsp, etc)
   { 'nvim-telescope/telescope.nvim', version = '*', dependencies = { 'nvim-lua/plenary.nvim' } },
 
@@ -97,6 +100,8 @@ local plugins = {
   'mbbill/undotree',
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
+  'tpope/vim-commentary',
+  'tpope/vim-surround',
 
   { "catppuccin/nvim", name = "catppuccin" },
 }

@@ -7,6 +7,7 @@ lsp.ensure_installed({
   'rust_analyzer',
   'gopls',
   'terraformls',
+  'tflint',
 })
 
 lsp.set_preferences({
@@ -17,6 +18,13 @@ lsp.set_preferences({
         hint = 'H',
         info = 'I'
     }
+})
+
+require'lspconfig'.terraformls.setup{}
+
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+  pattern = {"*.tf", "*.tfvars"},
+  callback = vim.lsp.buf.format,
 })
 
 lsp.setup()

@@ -6,6 +6,7 @@ require'nvim-treesitter.configs'.setup {
     "lua",
     "rust",
     "go",
+    "terraform",
   },
 
   sync_install = false,
