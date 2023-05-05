@@ -20,6 +20,7 @@ require("lazy").setup({
     { import = "plugins" },
     { import = "plugins.extras.lang.rust" },
     { import = "plugins.extras.lang.go" },
+    { import = "plugins.extras.lang.terraform" },
     { import = "plugins.extras.lang.svelte" },
   },
   defaults = {
