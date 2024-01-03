@@ -3,7 +3,7 @@
 -- Add any additional autocmds here
 
 -- Disables copilot by default
-vim.api.nvim_create_autocmd({ "BufEnter" }, {
-  pattern = "*",
-  command = "Copilot disable",
-})
+-- vim.api.nvim_create_autocmd({ "BufEnter" }, {
+--   pattern = "*",
+--   command = "Copilot disable",
+-- })
