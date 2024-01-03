@@ -38,7 +38,7 @@ return {
       },
       setup = {
         rust_analyzer = function(_, opts)
-          require("lazyvim.util").on_attach(function(client, buffer)
+          require("lazyvim.util").lsp.on_attach(function(client, buffer)
             if client.name == "rust_analyzer" then
               -- stylua: ignore
               vim.keymap.set("n", "<leader>co", "RustHoverActions", { buffer = buffer, desc = "Hover Actions (Rust)" })

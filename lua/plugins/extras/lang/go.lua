@@ -41,17 +41,17 @@ return {
   },
 
   -- setup formatters & linters
-  {
-    "jose-elias-alvarez/null-ls.nvim",
-    event = "BufReadPre",
-    dependencies = { "mason.nvim" },
-    opts = function(_, opts)
-      local nls = require("null-ls")
-      vim.list_extend(opts.sources, {
-        nls.builtins.formatting.goimports,
-      })
-    end,
-  },
+  -- {
+  --   "nvimtools/none-ls.nvim",
+  --   event = "BufReadPre",
+  --   dependencies = { "mason.nvim" },
+  --   opts = function(_, opts)
+  --     local nls = require("null-ls")
+  --     vim.list_extend(opts.sources, {
+  --       nls.builtins.formatting.goimports,
+  --     })
+  --   end,
+  -- },
 
   -- setup DAP
   -- {
